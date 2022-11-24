@@ -35,4 +35,4 @@ optional arguments:
 
 ### CUDA Implementation
 
-The code has been primarily constructed and optimized for running in a GPU-enabled environment, running the code on CPU is significantly slower.
+The code has been primarily constructed and optimized for running in a GPU-enabled environment, running the code in CPU is significantly slower.
