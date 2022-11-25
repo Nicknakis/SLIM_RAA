@@ -31,9 +31,13 @@ pip install -r requirements.txt
 
 Our Pytorch implementation uses the [pytorch_sparse](https://github.com/rusty1s/pytorch_sparse) package. Installation guidelines can be found at the corresponding [Github repository](https://github.com/rusty1s/pytorch_sparse).
 
-For a cpu installation please use: ```pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+cpu.html```
+#### For a cpu installation please use: 
 
-For a gpu installation please use: ```pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+${CUDA}.html```
+```pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+cpu.html```
+
+#### For a gpu installation please use:
+
+```pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+${CUDA}.html```
 
 where ${CUDA} should be replaced by either cu102, cu113, or cu116 depending on your PyTorch installation.
 
@@ -60,6 +64,11 @@ optional arguments:
 **--dataset** &emsp;  dataset to apply Skellam Latent Distance Modeling on (default: wiki_elec)
 
 **--sample_percentage** &emsp;  sample size network percentage, it should be equal or less than 1 (default: 0.3)
+
+### Additional example for learning three-dimensional embeddings running on cpu:
+
+**RUN:** &emsp; ```python main.py --cuda False --D 3 --pretrained False```
+
 
 ### CUDA Implementation
 
