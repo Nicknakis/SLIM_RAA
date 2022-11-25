@@ -171,7 +171,7 @@ if __name__ == "__main__":
     plt.figure(figsize=(7,7),dpi=120)
     plt.scatter(X_[:,0],X_[:,1],c=arg_max,s=20)
     plt.axis('off')
-    plt.savefig("SLIM_RAA_PCA.png",dpi=120,bbox_inches = 'tight')    
+    plt.savefig("SLIM_RAA_PCA.png",dpi=120)    
     plt.show()
 
     
