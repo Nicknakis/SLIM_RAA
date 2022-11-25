@@ -1,0 +1,17 @@
+
+Unidirected Graphs Input Format
+
+
+*edges.txt contains the training data with three columns i,j,w where i is the row position and j the column position of the edge (with i<j) and w is the weight of the edge.
+
+
+*removed_edges.txt has the same format as the edges.txt file but contains the position and weights of the missing edges to be predicted
+
+
+
+*sparse_i_zer.txt and sparse_j_zer.txt contains  the test set positions of zero inputs (with i<j) these are used in the testing phase for the positive vs zero and negative vs zero experiments in link prediction
+
+
+*sparse_i_zer_train.txt and sparse_j_zer_train.txt contain the set of zero inputs on the residual graphs that are used to train Logistic regression.
+
+
