@@ -168,7 +168,7 @@ if __name__ == "__main__":
 
     arg_max=latent_raa_z.max(1)[1].detach().cpu().numpy()
 
-    plt.figure(figsize=(5,5),dpi=300)
+    #plt.figure(figsize=(5,5),dpi=300)
 
     # for i,j,w in zip(sparse_i.cpu().numpy(),sparse_j.cpu().numpy(),temp_w):
     #     plt.plot([X_[i,0], X_[j,0]], [X_[i,1], X_[j,1]],color=c_dict[w],lw=0.01,alpha=0.2)
@@ -202,7 +202,7 @@ if __name__ == "__main__":
 
 
     print('CREATING and SAVING files (please wait a couple of minutes)\n')
-    plt.figure(figsize=(5,5),dpi=120)
+    plt.figure(figsize=(8,8),dpi=120)
 
     for i,j,w in zip(sparse_i.cpu().numpy(),sparse_j.cpu().numpy(),temp_w):
         if w==0:
@@ -216,7 +216,7 @@ if __name__ == "__main__":
 
 
 
-    plt.figure(figsize=(5,5),dpi=120)
+    plt.figure(figsize=(8,8),dpi=120)
 
     for i,j,w in zip(sparse_i.cpu().numpy(),sparse_j.cpu().numpy(),temp_w):
         if w==2:
