@@ -70,7 +70,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
         spectral_centroids_to_z=self.spectral_data
        
         self.latent_z_=spectral_centroids_to_z
-        print('Finished spectral decomposition of the singed Laplacian\n')
+        print('\nFinished spectral decomposition of the singed Laplacian...\n')
         
             
 
@@ -128,7 +128,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
         def max_ind_val(l):
             return max(zip(range(len(l)), l), key=lambda x: x[1])
         
-        print('Initializing convex hull based on furthest sum \n')
+        print('Initializing convex hull based on furthest sum... \n')
         K=self.latent_z_.transpose(0,1).cpu().numpy()
         noc=self.latent_dim
         i=[6]
@@ -233,7 +233,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
         self.A=(self.R.transpose(0,1)@(self.latent_raa_z.transpose(0,1)@self.C)).transpose(0,1)
         self.latent_z=self.latent_raa_z@self.A
     
-        print('Initialization Done\n')
+        print('Initialization Done...\n')
 
     
     
