@@ -39,8 +39,8 @@ parser.add_argument('--LP',type=eval,
                     help='performs link prediction')
 
 parser.add_argument('--pretrained',type=eval, 
-                      choices=[True, False], default=False,
-                    help='Uses pretrained embeddings for link prediction (default: False)')
+                      choices=[True, False], default=True,
+                    help='Uses pretrained embeddings for link prediction (default: True)')
 
 parser.add_argument('--D', type=int, default=8, metavar='N',
                     help='dimensionality of the embeddings (default: 8)')
