@@ -12,6 +12,14 @@ pip install -r requirements.txt
 
 Our Pytorch implementation uses the [pytorch_sparse](https://github.com/rusty1s/pytorch_sparse) package. Installation guidelines can be found at the corresponding [Github repository](https://github.com/rusty1s/pytorch_sparse).
 
+For a cpu installation please use: "pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.9.0+cpu.html"
+
+For a gpu installation please use: "pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.9.0+${CUDA}.html"
+
+where ${CUDA} should be replaced by either cu102, cu113, or cu116 depending on your PyTorch installation.
+
+
+
 ### Learning hierarchical and multi-scale graph representations with HBDM
 **RUN:** &emsp; python main.py
 
