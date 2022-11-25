@@ -70,8 +70,8 @@ else:
 
 
 
-#plt.style.use('ggplot')
-#plt.set_cmap("tab10")
+plt.style.use('ggplot')
+
 
 torch.autograd.set_detect_anomaly(True)
 
@@ -171,6 +171,7 @@ if __name__ == "__main__":
 
     plt.figure(figsize=(7,7),dpi=120)
     plt.scatter(X_[:,0],X_[:,1],c=arg_max,s=20)
+    plt.set_cmap("tab10")
     plt.axis('off')
     plt.savefig("SLIM_RAA_PCA.png",dpi=120)    
     plt.show()
@@ -206,6 +207,7 @@ if __name__ == "__main__":
             plt.plot([_X[i,0], _X[j,0]], [_X[i,1], _X[j,1]],color=c_dict[w],lw=0.15,alpha=0.25,zorder=2)
     plt.scatter(_X[:,0],_X[:,1],c=arg_max,s=20)
     plt.scatter(points[:,0],points[:,1],c='black',s=100)
+    plt.set_cmap("tab10")
     plt.axis('off')
     plt.savefig(f"cir_{dataset}_neg.png",dpi=120)
     plt.show()
@@ -220,6 +222,7 @@ if __name__ == "__main__":
             plt.plot([_X[i,0], _X[j,0]], [_X[i,1], _X[j,1]],color=c_dict[w],lw=0.1,alpha=0.25,zorder=2)
     plt.scatter(_X[:,0],_X[:,1],c=arg_max,s=20)
     plt.scatter(points[:,0],points[:,1],c='black',s=100)
+    plt.set_cmap("tab10")
     plt.axis('off')
     plt.savefig(f"cir_{dataset}_pos.png",dpi=120)
     plt.show()
