@@ -1,6 +1,6 @@
 # SLIM_RAA
 
-Python 3.8.3 and Pytorch 1.9.0 implementation of the latent Signed relational Latent dIstance Model (SLIM).
+Python 3.8.3 and Pytorch 1.12.1 implementation of the latent Signed relational Latent dIstance Model (SLIM).
 
 ## Description
 
@@ -12,9 +12,9 @@ pip install -r requirements.txt
 
 Our Pytorch implementation uses the [pytorch_sparse](https://github.com/rusty1s/pytorch_sparse) package. Installation guidelines can be found at the corresponding [Github repository](https://github.com/rusty1s/pytorch_sparse).
 
-For a cpu installation please use: "pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.9.0+cpu.html"
+For a cpu installation please use: "pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+cpu.html"
 
-For a gpu installation please use: "pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.9.0+${CUDA}.html"
+For a gpu installation please use: "pip install torch-scatter torch-sparse -f https://data.pyg.org/whl/torch-1.12.1+${CUDA}.html"
 
 where ${CUDA} should be replaced by either cu102, cu113, or cu116 depending on your PyTorch installation.
 
