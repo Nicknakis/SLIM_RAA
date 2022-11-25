@@ -168,10 +168,10 @@ if __name__ == "__main__":
 
     arg_max=latent_raa_z.max(1)[1].detach().cpu().numpy()
 
-    plt.figure(figsize=(8,8),dpi=300)
-    plt.axis('off')
+    plt.figure(figsize=(5,5),dpi=120)
     plt.scatter(X_[:,0],X_[:,1],c=arg_max,s=20)
-    plt.savefig("SLIM_RAA_PCA.png",dpi=300,bbox_inches = 'tight')    
+    plt.axis('off')
+    plt.savefig("SLIM_RAA_PCA.png",dpi=120,bbox_inches = 'tight')    
     plt.show()
 
     
