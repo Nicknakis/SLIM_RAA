@@ -1,7 +1,7 @@
-torch
+torch==1.9.0
 tqdm
 numpy
-sklearn
+scikit-learn
 scipy
 matplotlib
 cvxopt
