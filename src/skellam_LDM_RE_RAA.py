@@ -128,7 +128,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
         def max_ind_val(l):
             return max(zip(range(len(l)), l), key=lambda x: x[1])
         
-        print('Initializing convex hull based on furtherst sum \n')
+        print('Initializing convex hull based on furthest sum \n')
         K=self.latent_z_.transpose(0,1).cpu().numpy()
         noc=self.latent_dim
         i=[6]
