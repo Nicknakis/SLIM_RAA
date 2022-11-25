@@ -168,7 +168,7 @@ if __name__ == "__main__":
 
     arg_max=latent_raa_z.max(1)[1].detach().cpu().numpy()
 
-    plt.figure(figsize=(5,5),dpi=120)
+    plt.figure(figsize=(7,7),dpi=120)
     plt.scatter(X_[:,0],X_[:,1],c=arg_max,s=20)
     plt.axis('off')
     plt.savefig("SLIM_RAA_PCA.png",dpi=120,bbox_inches = 'tight')    
@@ -198,7 +198,7 @@ if __name__ == "__main__":
 
 
     print('CREATING and SAVING circular plots!!! \n')
-    plt.figure(figsize=(8,8),dpi=120)
+    plt.figure(figsize=(7,7),dpi=120)
 
     for i,j,w in zip(sparse_i.cpu().numpy(),sparse_j.cpu().numpy(),temp_w):
         if w==0:
@@ -212,7 +212,7 @@ if __name__ == "__main__":
 
 
 
-    plt.figure(figsize=(8,8),dpi=120)
+    plt.figure(figsize=(7,7),dpi=120)
 
     for i,j,w in zip(sparse_i.cpu().numpy(),sparse_j.cpu().numpy(),temp_w):
         if w==2:
