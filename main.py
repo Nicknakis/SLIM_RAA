@@ -13,7 +13,6 @@ from sklearn.decomposition import PCA
 # import sparse 
 # import stats
 import math
-plt.set_cmap("tab10")
 
 
 
@@ -71,7 +70,9 @@ else:
 
 
 
-plt.style.use('ggplot')
+#plt.style.use('ggplot')
+#plt.set_cmap("tab10")
+
 torch.autograd.set_detect_anomaly(True)
 
 
