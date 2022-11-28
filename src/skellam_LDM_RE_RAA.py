@@ -237,10 +237,6 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
 
     
     
-
-    
-    
-    #introduce the likelihood function containing the two extra biases gamma_i and alpha_j
     def LSM_likelihood_bias_sample(self,epoch):
         '''
         Poisson log-likelihood ignoring the log(k!) constant
