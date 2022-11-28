@@ -239,7 +239,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
     
     def LSM_likelihood_bias_sample(self,epoch):
         '''
-        Poisson log-likelihood ignoring the log(k!) constant
+        Skellam MAP ignoring constant terms
         
         '''
         self.epoch=epoch
