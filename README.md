@@ -43,7 +43,7 @@ where ${CUDA} should be replaced by either cu102, cu113, or cu116 depending on y
 
 
 
-## Learning embedddings for signed networks using SLIM-RAA
+## Learning embeddings for signed undirected networks using SLIM-RAA
 
 **RUN:** &emsp; ```python main.py```
 
@@ -65,9 +65,17 @@ optional arguments:
 
 **--sample_percentage** &emsp;  sample size network percentage, it should be equal or less than 1 (default: 0.3)
 
+**--reg_strength** &emsp; Regularization strength over the model parameters (default: 0.5 equivalent to normal priors) (ONLY FOR DIRECTED NETWORKS)
+
+
 ### Additional example for learning three-dimensional embeddings running on cpu:
 
 **RUN:** &emsp; ```python main.py --cuda False --D 3 --pretrained False```
+
+## For directed signed networks please use:
+
+**RUN:** &emsp; ```python main_dir.py```
+
 
 
 ### CUDA Implementation
