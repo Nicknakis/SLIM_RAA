@@ -227,6 +227,7 @@ if __name__ == "__main__":
 
     w_numpy=weights_signed.abs().cpu().numpy()
     # plt.scatter(_X[:,0],_X[:,1])
+    print('CREATING and SAVING circular plots!!! \n')
 
     plt.figure(figsize=(15,15),dpi=120)
 
