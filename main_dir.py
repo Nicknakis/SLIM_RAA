@@ -251,7 +251,7 @@ if __name__ == "__main__":
     for i,j,w in zip(sparse_i.cpu().numpy(),sparse_j.cpu().numpy(),temp_w):
         c_i=0
         if w==2:
-            plt.plot([_X[0:N][i,0], _X[N:][j,0]], [_X[0:N][i,1], _X[N:][j,1]],color=c_dict[w],lw=0.2,alpha=0.2,zorder=3)
+            plt.plot([_X[0:N][i,0], _X[N:][j,0]], [_X[0:N][i,1], _X[N:][j,1]],color=c_dict[w],lw=0.1,alpha=0.1,zorder=3)
         c_i+=c_i
     plt.scatter(_X[0:N][:,0],_X[0:N][:,1],c=arg_max[0:N],s=15)
     plt.scatter(_X[N:][:,0],_X[N:][:,1],c=arg_max[N:],s=20,marker='*')
