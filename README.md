@@ -84,6 +84,6 @@ The code has been primarily constructed and optimized for running in a GPU-enabl
 
 ## Reference
 
-[Characterizing Polarization in Social Networks using the Signed Relational Latent Distance Model]([https://github.com/rusty1s/pytorch_sparse](https://proceedings.mlr.press/v206/nakis23a.html)https://proceedings.mlr.press/v206/nakis23a.html), Nikolaos Nakis et al., AISTATS 23
+[Characterizing Polarization in Social Networks using the Signed Relational Latent Distance Model](https://github.com/rusty1s/pytorch_sparse](https://proceedings.mlr.press/v206/nakis23a.html)https://proceedings.mlr.press/v206/nakis23a.html), Nikolaos Nakis et al., AISTATS 23
 
 
