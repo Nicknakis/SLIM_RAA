@@ -114,7 +114,11 @@ class SLIM_RAA_dir(nn.Module,Spectral_clustering_init):
     
     
     def furthest_sum(self, exclude=[]):
-        """Furthest sum algorithm, to efficiently generat initial seed/archetypes.
+        """
+        CODE taken from: https://github.com/ulfaslak/py_pcha/blob/master/py_pcha/furthest_sum.py
+
+        
+        Furthest sum algorithm, to efficiently generat initial seed/archetypes.
         Note: Commonly data is formatted to have shape (examples, dimensions).
         This function takes input and returns output of the transposed shape,
         (dimensions, examples).
