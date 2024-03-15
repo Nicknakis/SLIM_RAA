@@ -318,7 +318,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
 
 
         q=-torch.special.gammaln(order+1)-torch.special.gammaln(nu_link.unsqueeze(1)+order+1)+  rates_link.unsqueeze(-1)*(nu_link.unsqueeze(1)+2*order)
-        logI=torch.log(torch.exp(q).sum(1)+1e-06)
+        logI=torch.logsumexp(q,1)
         
         
         nu_link_z=torch.zeros(self.up_i.shape[0]).float()
@@ -328,7 +328,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
       
 
         q_z=-torch.special.gammaln(order+1)-torch.special.gammaln(nu_link_z.unsqueeze(1)+order+1)+  rates_non_link.unsqueeze(-1)*(nu_link_z.unsqueeze(1)+2*order)
-        logI_z=torch.log(torch.exp(q_z).sum(1)+1e-06)
+        logI_z=torch.logsumexp(q_z,1)
         
         nu_link_e=torch.zeros(self.weights_sample.shape[0]).float()
     
@@ -338,7 +338,7 @@ class SLIM_RAA_und(nn.Module,Spectral_clustering_init):
 
 
         q_e=-torch.special.gammaln(order+1)-torch.special.gammaln(nu_link_e.unsqueeze(1)+order+1)+  rates_link.unsqueeze(-1)*(nu_link_e.unsqueeze(1)+2*order)
-        logI_e=torch.log(torch.exp(q_e).sum(1)+1e-06)
+        logI_e=torch.logsumexp(q_e,1)
 
       
         
